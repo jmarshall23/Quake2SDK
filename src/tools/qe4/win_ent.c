@@ -372,11 +372,11 @@ BOOL CreateEntityWindow(HINSTANCE hInstance)
 	DestroyWindow (hwndEntityPalette);
 
 	OldFieldWindowProc = (void *)GetWindowLong (hwndEnt[EntKeyField], GWL_WNDPROC);
-	SetWindowLong (hwndEnt[EntKeyField], GWL_WNDPROC, (long)FieldWndProc);
-	SetWindowLong (hwndEnt[EntValueField], GWL_WNDPROC, (long)FieldWndProc);
+	SetWindowLong (hwndEnt[EntKeyField], GWL_WNDPROC, FieldWndProc);
+	SetWindowLong (hwndEnt[EntValueField], GWL_WNDPROC, FieldWndProc);
 
 	OldEntityListWindowProc = (void *)GetWindowLong (hwndEnt[EntList], GWL_WNDPROC);
-	SetWindowLong (hwndEnt[EntList], GWL_WNDPROC, (long)EntityListWndProc);
+	SetWindowLong (hwndEnt[EntList], GWL_WNDPROC, EntityListWndProc);
 
 	FillClassList ();
 

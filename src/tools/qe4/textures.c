@@ -489,7 +489,7 @@ void FillTextureMenu (void)
 	HMENU	hmenu;
 	int		i;
 	struct _finddata_t fileinfo;
-	int		handle;
+	intptr_t handle;
 	char	dirstring[1024];
 	char	*path;
 

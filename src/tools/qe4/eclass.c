@@ -217,7 +217,7 @@ void Eclass_ScanFile (char *filename)
 void Eclass_InitForSourceDirectory (char *path)
 {
 	struct _finddata_t fileinfo;
-	int		handle;
+	intptr_t handle;
 	char	filename[1024];
 	char	filebase[1024];
 	char    temp[1024];

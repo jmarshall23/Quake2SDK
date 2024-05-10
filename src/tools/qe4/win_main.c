@@ -1171,7 +1171,7 @@ static HWND CreateMyStatusWindow(HINSTANCE hInst)
             hInst,                           // instance
             NULL);							 // window data
 
-	SendMessage( hWnd, SB_SETPARTS, 3, ( long ) partsize );
+	SendMessage( hWnd, SB_SETPARTS, 3, partsize );
 
 	return hWnd;
 }
